@@ -16,5 +16,10 @@ namespace VTDI_GATE_LOGG
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
