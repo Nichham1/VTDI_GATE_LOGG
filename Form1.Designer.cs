@@ -30,13 +30,13 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gateLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.schedulingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gateLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gateListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gateInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gateReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -64,6 +64,27 @@
             this.userToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.userToolStripMenuItem.Text = "User";
             // 
+            // logInToolStripMenuItem
+            // 
+            this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
+            this.logInToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.logInToolStripMenuItem.Text = "Log in";
+            this.logInToolStripMenuItem.Click += new System.EventHandler(this.LogInToolStripMenuItem_Click);
+            // 
+            // userManagementToolStripMenuItem
+            // 
+            this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
+            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.userManagementToolStripMenuItem.Text = "User Management";
+            this.userManagementToolStripMenuItem.Click += new System.EventHandler(this.UserManagementToolStripMenuItem_Click);
+            // 
+            // schedulingToolStripMenuItem
+            // 
+            this.schedulingToolStripMenuItem.Name = "schedulingToolStripMenuItem";
+            this.schedulingToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.schedulingToolStripMenuItem.Text = "Scheduling";
+            this.schedulingToolStripMenuItem.Click += new System.EventHandler(this.SchedulingToolStripMenuItem_Click);
+            // 
             // gateLogsToolStripMenuItem
             // 
             this.gateLogsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -72,6 +93,20 @@
             this.gateLogsToolStripMenuItem.Name = "gateLogsToolStripMenuItem";
             this.gateLogsToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.gateLogsToolStripMenuItem.Text = "GateLogs";
+            // 
+            // gateListToolStripMenuItem
+            // 
+            this.gateListToolStripMenuItem.Name = "gateListToolStripMenuItem";
+            this.gateListToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.gateListToolStripMenuItem.Text = "Gate List";
+            this.gateListToolStripMenuItem.Click += new System.EventHandler(this.GateListToolStripMenuItem_Click);
+            // 
+            // gateInToolStripMenuItem
+            // 
+            this.gateInToolStripMenuItem.Name = "gateInToolStripMenuItem";
+            this.gateInToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.gateInToolStripMenuItem.Text = "Gate In";
+            this.gateInToolStripMenuItem.Click += new System.EventHandler(this.GateInToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -82,48 +117,19 @@
             this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
-            // logInToolStripMenuItem
-            // 
-            this.logInToolStripMenuItem.Name = "logInToolStripMenuItem";
-            this.logInToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logInToolStripMenuItem.Text = "Log in";
-            this.logInToolStripMenuItem.Click += new System.EventHandler(this.LogInToolStripMenuItem_Click);
-            // 
-            // userManagementToolStripMenuItem
-            // 
-            this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
-            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.userManagementToolStripMenuItem.Text = "User Management";
-            // 
-            // schedulingToolStripMenuItem
-            // 
-            this.schedulingToolStripMenuItem.Name = "schedulingToolStripMenuItem";
-            this.schedulingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.schedulingToolStripMenuItem.Text = "Scheduling";
-            // 
-            // gateListToolStripMenuItem
-            // 
-            this.gateListToolStripMenuItem.Name = "gateListToolStripMenuItem";
-            this.gateListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gateListToolStripMenuItem.Text = "Gate List";
-            // 
-            // gateInToolStripMenuItem
-            // 
-            this.gateInToolStripMenuItem.Name = "gateInToolStripMenuItem";
-            this.gateInToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gateInToolStripMenuItem.Text = "Gate In";
-            // 
             // gateReportsToolStripMenuItem
             // 
             this.gateReportsToolStripMenuItem.Name = "gateReportsToolStripMenuItem";
-            this.gateReportsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gateReportsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.gateReportsToolStripMenuItem.Text = "Gate Reports";
+            this.gateReportsToolStripMenuItem.Click += new System.EventHandler(this.GateReportsToolStripMenuItem_Click);
             // 
             // userLogsToolStripMenuItem
             // 
             this.userLogsToolStripMenuItem.Name = "userLogsToolStripMenuItem";
-            this.userLogsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userLogsToolStripMenuItem.Size = new System.Drawing.Size(141, 22);
             this.userLogsToolStripMenuItem.Text = "User Logs";
+            this.userLogsToolStripMenuItem.Click += new System.EventHandler(this.UserLogsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -135,7 +141,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

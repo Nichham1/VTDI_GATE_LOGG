@@ -12,11 +12,12 @@ namespace VTDI_GATE_LOGG
 {
     public partial class Form1 : Form
     {
-        Boolean isloggedin = false;
+        public Boolean isloggedin = false;
 
         public void Loggedin()
         {
             LoginForm login = new LoginForm();
+         //   login.MdiParent = this;
             login.Show();
         }
         public Form1()
@@ -27,7 +28,38 @@ namespace VTDI_GATE_LOGG
 
         private void LogInToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Loggedin();
+            if (isloggedin == false) { Loggedin();} else{ MessageBox.Show("You are already logged in"); }
+            
+        }
+
+        private void UserManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SchedulingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GateListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GateInToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GateReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

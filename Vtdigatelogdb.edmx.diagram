@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="80fcbb2763b2485488035b2d84780dfd" Name="Diagram1">
+        <EntityTypeShape EntityType="vtdi_gatelog_dbModel.Gateinout" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="vtdi_gatelog_dbModel.Itemtodeclear" Width="1.5" PointX="0.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="vtdi_gatelog_dbModel.purpose" Width="1.5" PointX="2" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="vtdi_gatelog_dbModel.VehicleType" Width="1.5" PointX="3.625" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="vtdi_gatelog_dbModel.FK_Gateinout_Itemtodeclear" ManuallyRouted="false" />
+        <AssociationConnector Association="vtdi_gatelog_dbModel.FK_Gateinout_Purpose" ManuallyRouted="false" />
+        <AssociationConnector Association="vtdi_gatelog_dbModel.FK_Gateinout_VehicleType" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="vtdi_gatelog_dbModel.Gender" Width="1.5" PointX="6" PointY="4.25" />
+        <EntityTypeShape EntityType="vtdi_gatelog_dbModel.User" Width="1.5" PointX="6" PointY="0.75" />
+        <AssociationConnector Association="vtdi_gatelog_dbModel.FK_Gateinout_Users" />
+        <AssociationConnector Association="vtdi_gatelog_dbModel.FK_Users_Gender" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
