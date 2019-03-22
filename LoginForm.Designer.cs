@@ -41,27 +41,28 @@
             // 
             // btSubmit
             // 
-            this.btSubmit.Location = new System.Drawing.Point(91, 203);
+            this.btSubmit.Location = new System.Drawing.Point(82, 203);
             this.btSubmit.Name = "btSubmit";
             this.btSubmit.Size = new System.Drawing.Size(75, 23);
-            this.btSubmit.TabIndex = 0;
+            this.btSubmit.TabIndex = 3;
             this.btSubmit.Text = "Submit ";
             this.btSubmit.UseVisualStyleBackColor = true;
             this.btSubmit.Click += new System.EventHandler(this.BtSubmit_Click);
             // 
             // btReset
             // 
-            this.btReset.Location = new System.Drawing.Point(172, 203);
+            this.btReset.Location = new System.Drawing.Point(188, 203);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(75, 23);
-            this.btReset.TabIndex = 1;
+            this.btReset.TabIndex = 4;
             this.btReset.Text = "Reset";
             this.btReset.UseVisualStyleBackColor = true;
+            this.btReset.Click += new System.EventHandler(this.BtReset_Click);
             // 
             // pbUsericon
             // 
             this.pbUsericon.Image = ((System.Drawing.Image)(resources.GetObject("pbUsericon.Image")));
-            this.pbUsericon.Location = new System.Drawing.Point(113, 26);
+            this.pbUsericon.Location = new System.Drawing.Point(123, 30);
             this.pbUsericon.Name = "pbUsericon";
             this.pbUsericon.Size = new System.Drawing.Size(109, 91);
             this.pbUsericon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -73,28 +74,29 @@
             this.tbUsername.Location = new System.Drawing.Point(43, 160);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(114, 20);
-            this.tbUsername.TabIndex = 3;
+            this.tbUsername.TabIndex = 1;
             // 
             // tbPassword
             // 
             this.tbPassword.Location = new System.Drawing.Point(188, 160);
             this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.Size = new System.Drawing.Size(114, 20);
-            this.tbPassword.TabIndex = 3;
+            this.tbPassword.TabIndex = 2;
             // 
             // lbusername
             // 
             this.lbusername.AutoSize = true;
-            this.lbusername.Location = new System.Drawing.Point(66, 144);
+            this.lbusername.Location = new System.Drawing.Point(69, 144);
             this.lbusername.Name = "lbusername";
             this.lbusername.Size = new System.Drawing.Size(63, 13);
-            this.lbusername.TabIndex = 4;
+            this.lbusername.TabIndex = 7;
             this.lbusername.Text = "User Name ";
             // 
             // lbpassword
             // 
             this.lbpassword.AutoSize = true;
-            this.lbpassword.Location = new System.Drawing.Point(222, 144);
+            this.lbpassword.Location = new System.Drawing.Point(207, 144);
             this.lbpassword.Name = "lbpassword";
             this.lbpassword.Size = new System.Drawing.Size(56, 13);
             this.lbpassword.TabIndex = 5;
@@ -102,6 +104,7 @@
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.btSubmit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 276);
@@ -114,6 +117,7 @@
             this.Controls.Add(this.btSubmit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LoginForm";
             ((System.ComponentModel.ISupportInitialize)(this.pbUsericon)).EndInit();
             this.ResumeLayout(false);

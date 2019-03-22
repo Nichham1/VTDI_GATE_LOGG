@@ -17,7 +17,7 @@ namespace VTDI_GATE_LOGG
         public void Loggedin()
         {
             LoginForm login = new LoginForm();
-         //   login.MdiParent = this;
+            login.MdiParent = this;
             login.Show();
         }
         public Form1()
@@ -34,7 +34,11 @@ namespace VTDI_GATE_LOGG
 
         private void UserManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (isloggedin == false) { Loggedin(); } else
+            {
+                UserManagementForm userm = new UserManagementForm();
+                userm.MdiParent = this;
+                userm.Show();  }
         }
 
         private void SchedulingToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,22 +48,25 @@ namespace VTDI_GATE_LOGG
 
         private void GateListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (isloggedin == false) { Loggedin(); } else { MessageBox.Show("You clicked on Gatelist"); }
         }
 
         private void GateInToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (isloggedin == false) { Loggedin(); } else {
+                GateLogForm Gatelog = new GateLogForm();
+                Gatelog.MdiParent = this;
+                Gatelog.Show(); }
         }
 
         private void UserLogsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (isloggedin == false) { Loggedin(); } else { MessageBox.Show("You clicked on User logs "); }
         }
 
         private void GateReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (isloggedin == false) { Loggedin(); } else { MessageBox.Show("You cliked on Gate reports "); }
         }
     }
 }

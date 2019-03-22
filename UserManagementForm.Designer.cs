@@ -241,7 +241,6 @@
             this.BTSearch.TabIndex = 1;
             this.BTSearch.Text = "Search";
             this.BTSearch.UseVisualStyleBackColor = true;
-            this.BTSearch.Click += new System.EventHandler(this.Button1_Click);
             // 
             // dataGridView1
             // 

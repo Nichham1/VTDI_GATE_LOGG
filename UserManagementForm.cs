@@ -12,14 +12,11 @@ namespace VTDI_GATE_LOGG
 {
     public partial class UserManagementForm : Form
     {
+        private vtdi_gatelog_dbEntities1 Ctx;
+
         public UserManagementForm()
         {
             InitializeComponent();
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

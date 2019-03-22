@@ -13,10 +13,10 @@ namespace VTDI_GATE_LOGG
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class vtdi_gatelog_dbEntities : DbContext
+    public partial class vtdi_gatelog_dbEntities1 : DbContext
     {
-        public vtdi_gatelog_dbEntities()
-            : base("name=vtdi_gatelog_dbEntities")
+        public vtdi_gatelog_dbEntities1()
+            : base("name=vtdi_gatelog_dbEntities1")
         {
         }
     

@@ -30,5 +30,6 @@ namespace VTDI_GATE_LOGG
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Gateinout> Gateinouts { get; set; }
+        public virtual Gender Gender { get; set; }
     }
 }
